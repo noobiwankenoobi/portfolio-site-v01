@@ -1,14 +1,17 @@
 :root {
     font-size: 16px;
     font-family: 'Open Sans';
+    margin: 0;
+    padding: 0;
     --text-primary: ;
     --text-secondary: ;
     --bg-primary: ;
     --bg-secondary: ;
 }
 
+/* Navbar Begins */
 .navbar {
-    background-color: grey;
+    background-color: pink;
     position: fixed;
     height: 100vh;
     width: 5rem;
@@ -19,3 +22,28 @@
     align-items: center;
     justify-content: space-evenly;
 }
+
+.nav-link {
+    width: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-link i { 
+    font-size: 24px;
+    color: black;
+}
+
+.link-text {
+    display: none;
+}
+/* Navbar Ends */
+
+
+/* Main Content Begins */
+ .main-content {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
