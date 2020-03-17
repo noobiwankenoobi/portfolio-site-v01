@@ -61,6 +61,7 @@
     height: 6rem;
     display: flex;
     /* padding: 1.5rem; */
+    /* transition: transform var(--transition-speed); */
 }
 
 .nav-link:hover .nav-icon {
@@ -107,16 +108,72 @@
 .navbar:hover .logo i {
     transform: rotate(-180deg);
 }
+/* Logo Ends */
+
+
+/* Font Sizing Begins */
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+/* Font Sizes End */
 
 
 /* Main Content Begins */
  .main-content {
-     height: 100vh;
-     width: 100vw;
-     display: flex;
-     justify-content: center;
-     align-items: center;
+     height: 30vh;
+     width: auto;
+     /* display: flex;
+     justify-content: flex-start;
+     align-items: flex-start; */
      margin-left: 5rem;
      padding: 1rem;
      /* background-color: var(--bg-secondary); */
+ }
+
+ .projects-page {
+     display: flex;
+     flex-direction: column;
+     width: auto;
+     height: auto;
+ }
+
+ .projects-header {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: auto;
+     height: 40vh;
+     margin: 1rem;
+     padding: 1rem;
+     background-color: var(--bg-secondary);
+ }
+
+ .projects-section {
+     width: auto;
+     height: auto;
+     display: flex;
+     flex-direction: row;
+     justify-content: flex-start;
+     flex-wrap: wrap;
+ }
+
+ .project-div {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     width: 30%;
+     min-width: 20rem;
+     height: 20rem;
+     margin: 1rem;
+     /* padding: 1rem; */
+     background: var(--bg-primary);
  }
