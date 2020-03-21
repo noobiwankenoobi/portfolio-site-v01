@@ -127,8 +127,13 @@ h3 {
 
 /* Main Content Begins */
  .main-content {
+     display: flex;
+     width: auto;
+     height: auto;
+     justify-content: center;
+     align-items: center;
      margin-left: 5rem;
-     padding: 1rem;
+     /* padding: 1rem; */
  }
 
 
@@ -136,7 +141,9 @@ h3 {
  .projects-page {
      display: flex;
      flex-direction: column;
-     width: auto;
+     /* justify-content: center;
+     align-items: center; */
+     width: 100%;
      height: auto;
  }
 
@@ -145,7 +152,7 @@ h3 {
      justify-content: center;
      align-items: center;
      width: auto;
-     height: 40vh;
+     height: 20rem;
      margin: 1rem;
      padding: 1rem;
      background-color: var(--bg-secondary);
@@ -155,9 +162,11 @@ h3 {
      width: auto;
      height: auto;
      display: flex;
-     flex-direction: row;
+     flex-direction: column;
+     align-items: center;
      justify-content: flex-start;
-     flex-wrap: wrap;
+     padding: 1rem;
+     margin: 1rem;
  }
 
  .project-div {
@@ -165,11 +174,11 @@ h3 {
      flex-direction: column;
      justify-content: center;
      align-items: center;
-     width: 30%;
+     width: 100%;
      min-width: 20rem;
      height: 20rem;
      margin: 1rem;
-     /* padding: 1rem; */
+     padding: 1rem;
      background: var(--bg-primary);
  }
 
@@ -178,22 +187,18 @@ h3 {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
+    width: 60rem; /* Full width */
+    height: 100vh; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    margin: auto;
+    top: 0;
   }
   
   /* Modal Content */
   .project-modal-content {
+    display: flex;
     background-color: #fefefe;
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
     /* margin: auto; */
     padding: 20px;
     border: 1px solid #888;
@@ -203,7 +208,7 @@ h3 {
   /* The Close Button */
   .close-modal-btn {
     color: #aaaaaa;
-    float: right;
+    margin-left: auto;
     font-size: 28px;
     font-weight: bold;
   }
@@ -213,6 +218,6 @@ h3 {
     color: #000;
     text-decoration: none;
     cursor: pointer;
-
+  }
 
  /* Projects Section Ends */
