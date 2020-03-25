@@ -1,38 +1,88 @@
-// MODALS BEGIN
-const projectModal = document.getElementById("project-facedetection-modal-id");
+// FUNCTION TO HELP WITH EVENT.TARGET //
+document.onclick = function(event) {
+  console.log("EVENT TARGET ID= ", event.target.id)
+  console.log("EVENT TARGET ID IS A = ", typeof event.target.id)
+  console.log("EVENT TARGET= ", event.target)
+}
 
-const projectModalContent = document.getElementsByClassName("project-modal-content");
+////////////////////////////
+// MODALS SECTION BEGINS //
+//////////////////////////
+
+//////////////////////////////////////
+// ASIGN DOM ELEMENTS TO VARIABLES //
+////////////////////////////////////
+
+// ASSIGN EACH MODAL TO A VARIABLE BY ID //
+const faceDetectModal = document.getElementById("project-facedetection-modal-id");
+const ticTacToeModal = document.getElementById("project-tictactoe-modal-id")
+const curioModal = document.getElementById("project-curio-modal-id")
+
+// ASSIGN EACH CARD ID TO VARIABLE //
+const faceDetectCardId = "project-facedetection-card-id";
+const ticTacToeCardId = "project-tictactoe-card-id";
+const curioCardId = "project-curio-card-id";
+
+// GIVE ALL MODALS A SINGLE VARIABLE BY CLASS //
+const allModals = document.getElementsByClassName("project-modal-div")
 
 // Get the button that opens the modal
-const openProjectModalBtn = document.getElementById("project-facedetection-card-id");
+// const openProjectModalBtn = document.getElementsByClassName("project-card-div");
 
-// Get the <span> element that closes the modal
-const closeProjectModalBtn = document.getElementsByClassName("close-modal-btn")[0];
 
+//////////////////////////
+// MODAL STATUS OBJECT //
+////////////////////////
 const modalStatus = {
   closedOrOpen: "closed",
 }
 
-// When the user clicks the button, open the modal 
-openProjectModalBtn.onclick = function() {
-  projectModal.style.display = "flex";
+/////////////////
+// OPEN MODAL //
+///////////////
+// BY ID OF CARD CLICKED
+// For now this will be hard coded by project
+// Eventually pass ids around and have simpler openModal logic
+const openProjectModal = (event) => {
+  clickedProjectCardId = event.target.id;
+  if (clickedProjectCardId == faceDetectCardId ) {
+    faceDetectModal.style.display = "flex";
+  } else if (clickedProjectCardId == ticTacToeCardId) {
+    ticTacToeModal.style.display = "flex";
+  } else if (clickedProjectCardId == curioCardId) {
+    curioModal.style.display = "flex";
+  }
+  // Change the modal object status
   modalStatus.closedOrOpen = "open";
-  console.log("modalStatus.closedOrOpen= ", modalStatus.closedOrOpen);
 }
+//////////////////////////////////////////////////////////////////
 
-// When the user clicks on <span> (x), close the modal
-closeProjectModalBtn.onclick = function() {
-  projectModal.style.display = "none";
+
+///////////////////
+// CLOSE MODALS //
+/////////////////
+const closeModals = (event) => {
+  // Set each modal display to "none"
+  faceDetectModal.style.display = "none";
+  ticTacToeModal.style.display = "none";
+  curioModal.style.display = "none";
+
+  // Change the modal object status
   modalStatus.closedOrOpen = "closed";
-  console.log("modalStatus.closedOrOpen= ", modalStatus.closedOrOpen);
+}
+///////////////////////////////////////////////////////////////
+  
+
+/////////////////////
+// CLICK HANDLERS //
+///////////////////
+const addHandlers = () => {
+  $('.project-card-div').on('click', openProjectModal);
+  $('.close-modal-btn').on('click', closeModals);
+  // $('.project-modal-div').on('click', clickOutsideModal)
 }
 
-// When the user clicks anywhere outside of the modal, close it
-// window.onclick = function(event) {
-//   console.log("event.target= ", event.target)
-//   if (modalStatus.modalStatus === "open" && event.target !== projectModalContent) {
-//     projectModal.style.display = "none";
-//     modalStatus.closedOrOpen = "closed";
-//   }
-// }
-// MODALS END
+// ON PAGE LOAD //
+$(() => {
+  addHandlers()
+})

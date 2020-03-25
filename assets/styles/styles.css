@@ -15,7 +15,8 @@
     padding: 0;
 }
 
-/* Font Sizing Begins */
+
+/* Font Sizing Begins ################################################ */
 h1 {
     font-size: 5rem;
 }
@@ -27,9 +28,9 @@ h2 {
 h3 {
     font-size: 2rem;
 }
-/* Font Sizes End */
+/* Font Sizes End ################################################ */
 
-/* Navbar Begins */
+/* Navbar Begins ################################################ */
 .navbar {
     background-color: black;
     position: fixed;
@@ -98,9 +99,9 @@ h3 {
     margin-left: 1rem;
     font-size: 1.2rem;
 }
-/* Navbar Ends */
+/* Navbar Ends ################################################ */
 
-/* Logo Begins */
+/* Logo Begins ################################################ */
 .logo {
     font-weight: bold;
     text-transform: uppercase;
@@ -122,10 +123,10 @@ h3 {
 .navbar:hover .logo i {
     transform: rotate(-180deg);
 }
-/* Logo Ends */
+/* Logo Ends ################################################ */
 
 
-/* Main Content Begins */
+/* Main Content Begins ################################################ */
  .main-content {
      display: flex;
      width: auto;
@@ -137,7 +138,7 @@ h3 {
  }
 
 
-/* Projects Section Begins */
+/* Projects Section Begins ################################################ */
  .projects-page {
      display: flex;
      flex-direction: column;
@@ -169,12 +170,12 @@ h3 {
      margin: 1rem;
  }
 
- .project-div {
+ .project-card-div {
      display: flex;
      flex-direction: column;
      justify-content: center;
      align-items: center;
-     width: 100%;
+     width: 50%;
      min-width: 20rem;
      height: 20rem;
      margin: 1rem;
@@ -182,27 +183,31 @@ h3 {
      background: var(--bg-primary);
  }
 
- /* Projects Modals Begin */
- .project-modal {
+ /* Projects Modals Begin ################################################ */
+ .project-modal-div {
     display: none; /* Hidden by default */
+    justify-content: center;
+    align-items: center;
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    width: 60rem; /* Full width */
+    width: 100vw; /* Full width */
     height: 100vh; /* Full height */
     overflow: auto; /* Enable scroll if needed */
+    background-color: transparent;
     top: 0;
   }
   
   /* Modal Content */
   .project-modal-content {
     display: flex;
+    flex-direction: column;
     background-color: #fefefe;
-    width: 100%;
-    height: 100%;
-    /* margin: auto; */
-    padding: 20px;
+    width: auto;
+    height: 80vh;
+    padding: 1rem;
     border: 1px solid #888;
-    /* width: 80%; */
+    border-radius: 1rem;
+    overflow: scroll;
   }
   
   /* The Close Button */
@@ -220,4 +225,68 @@ h3 {
     cursor: pointer;
   }
 
- /* Projects Section Ends */
+  .project-modal-header {
+      display: flex;
+      width: auto;
+      height: 2rem;
+      padding: 1rem;
+      margin: 0 1rem 0 1rem;
+      background-color: pink;
+  }
+
+  .project-modal-top-section {
+      display: flex;
+      height: auto;
+      width: 100%;
+  }
+
+  .project-modal-screen {
+      height: 28rem;
+      width: 60rem;
+      margin: 1rem;
+      padding: 1rem;
+      background-color: pink;
+  }
+
+  .project-modal-screen-side {
+      width: 20rem;
+      height: 28rem;
+      margin: 1rem;
+      padding: 1rem;
+      background-color: pink;
+
+  }
+
+  .project-modal-bottom-section {
+      display: flex;
+      width: 100%;
+      height: auto;
+  }
+
+  .project-modal-title {
+      margin: 1rem;
+      padding: 1rem;
+      background-color: pink;
+      height: auto;
+      width: 100%;
+  }
+
+  .project-modal-explain {
+      width: 60rem;
+      height: 55rem;
+      margin: 1rem;
+      padding: 1rem;
+      background-color: pink;
+    
+  }
+
+  .project-modal-tech-used {
+      width: 20rem;
+      height: 55rem;
+      background-color: pink;
+      margin: 1rem;
+      padding: 1rem;
+
+  }
+
+ /* Projects Section Ends ################################################ */
