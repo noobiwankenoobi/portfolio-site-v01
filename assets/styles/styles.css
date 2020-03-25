@@ -1,6 +1,9 @@
 :root {
     font-size: 16px;
-    font-family: 'Roboto', sans-serif;;
+    /* font-family: 'Roboto', sans-serif; */
+    /* font-family: 'Source Code Pro', monospace; */
+    font-family: 'Baloo 2', cursive;
+    /* font-family: 'Hind Madurai', sans-serif; */
     margin: 0;
     padding: 0;
     --text-primary: ;
@@ -27,6 +30,10 @@ h2 {
 
 h3 {
     font-size: 2rem;
+}
+
+p {
+    font-size: 1rem;
 }
 /* Font Sizes End ################################################ */
 
@@ -142,8 +149,6 @@ h3 {
  .projects-page {
      display: flex;
      flex-direction: column;
-     /* justify-content: center;
-     align-items: center; */
      width: 100%;
      height: auto;
  }
@@ -163,24 +168,40 @@ h3 {
      width: auto;
      height: auto;
      display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: flex-start;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: space-evenly;
      padding: 1rem;
      margin: 1rem;
  }
 
+ /* Project Cards Begin ################################################## */
  .project-card-div {
      display: flex;
      flex-direction: column;
      justify-content: center;
      align-items: center;
-     width: 50%;
-     min-width: 20rem;
-     height: 20rem;
-     margin: 1rem;
+     width: auto;
+     height: auto;
+     margin: 3rem;
      padding: 1rem;
+     border: 1px solid grey;
+     
+ }
+
+ .project-card-screen {
+     width: 35rem;
+     height: 20rem;
      background: var(--bg-primary);
+ }
+
+ .project-card-info {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     width: 35rem;
+     height: 10rem;
  }
 
  /* Projects Modals Begin ################################################ */
