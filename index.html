@@ -18,6 +18,7 @@
     <!-- Fonts Import -->
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Baloo+2|Hind+Madurai|Source+Code+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 
     <!-- JS Load-In -->
     <script src="assets/scripts/app.js" type="text/javascript" charset="utf-8" defer></script>
@@ -38,7 +39,7 @@
             </a>
         </div>
         <div class="nav-item">
-            <a href="" class="nav-link">
+            <a href="#home" class="nav-link" id="home-nav-link">
                 <i class="fa fa-home nav-icon"></i>
                 <span class="link-text">Home</span>
             </a>
@@ -49,8 +50,8 @@
                 <span class="link-text">Bio</span>
             </a>
         </div>
-        <div class="nav-item">
-            <a href="" class="nav-link">
+        <div class="nav-item" id="projects-nav-link">
+            <a href="#Projects" class="nav-link">
                 <i class="fa fa-laptop nav-icon"></i>
                 <span class="link-text">Projects</span>
             </a>
@@ -80,7 +81,59 @@
     <div class="main-content">
 
         <!-- Home Page Begins -->
+        <div class="home-page">
 
+            <!-- Home Landing Section -->
+            <div class="home-landing-section">
+                <img src="assets/images/headshot_01.jpg" alt="" class="landing-page-image">
+                <div class="home-landing-title-box">
+                    <h3 class="home-page-title">ROSS HAZELETT</h3>
+                    <h4 class="home-page-title-2">Web Developer</h4>
+                </div>
+            </div>
+
+            <div class="home-middle-section">
+                <div class="home-middle-section-text-box">
+                    <h3>This is my personal hub and portfolio.</h3>
+                    <h3>This is the minimum viable version 01 of the site.<br>It took me two days to make.</h3>
+                    <h3>Feel free to browse my projects and read a little about me.</h3>
+                    <h3>Below are my plans for the future of the site...</h3>
+                    <!-- <h4>The goal of this site is to help you get to know me and to showcase some projects of mine so you can get a sense of what I can do. Like me, the site itself is ever-changing and I hope to improve it every month.</h4> -->
+                </div>
+                
+            </div>
+
+            <div class="home-lower-section">
+                <h2>Portfolio Site Plans</h2>
+                <div class="home-lower-section-text-box">
+                    <h3>Portfolio Site v01 - Current - Completed</h3>
+                    <h3>Goals:</h3>
+                    <h4>Release minimum viable site and host it so employers can get a sense of who I am and what I've done</h4>
+                    <h4>Make it functional on both desktop and mobile screens</h4>
+                </div>
+                <div class="home-lower-section-text-box">
+                    <h3>Portfolio Site v02 - In Progress - ETA April 15 2020</h3>
+                    <h3>Goals:</h3>
+                    <h4>Improve aesthetics, more eye catching typeface, layout, more intentional color choices</h4>
+                    <h4>Add gifs of projects that play on:hover</h4>
+                    <h4>Include artwork and videos of guitar playing</h4>
+                    <h4>More interesting animations that add to experience without distracting or confusing the user</h4>
+                    <h4>Possible "dark mode"</h4>
+                    <h4>Continue to add new projects</h4>
+                </div>
+                <div class="home-lower-section-text-box">
+                    <h3>Portfolio Site v03 - Future - ETA Unknown</h3>
+                    <h3>Goals:</h3>
+                    <h4>Be able to switch between the three versions of the site to see progression of design and skills</h4>
+                    <h4>Pending...</h4>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
 
 
         <!-- Home Page Ends -->
@@ -102,9 +155,9 @@
                 <!-- Face Detection Project Card -->
                 <div class="project-card-div" id="project-facedetection-card-id">
 
-                    <div class="project-card-screen"></div>
+                    <div class="project-card-screen" id="project-facedetection-card-id"></div>
                     <div class="project-card-info">
-                        <h2 class="project-title">Real Time Face Detection</h2>
+                        <h3 class="project-title">Real Time Face Detection</h3>
                         <p>Built Real-time face detection in browser using Face API</p>
                         <span class="github-repo-link">Github Link</span>
                         <span class="hosted-project-link">Project Link</span>
@@ -113,11 +166,11 @@
                 </div>
 
                 <!-- Tic Tac Toe Project Card -->
-                <div class="project-card-div" id="project-tictactoe-card-id">
+                <div class="project-card-div">
 
-                     <div class="project-card-screen"></div>
+                     <div class="project-card-screen" id="project-tictactoe-card-id"></div>
                     <div class="project-card-info">
-                        <h2 class="project-title">Tic Tac Toe in JS</h2>
+                        <h3 class="project-title">Tic Tac Toe in JS</h3>
                         <p>Built playable Tic Tac Toe in Browser using Javascript</p>
                         <span class="github-repo-link">Github Link</span>
                         <span class="hosted-project-link">Project Link</span>
@@ -125,10 +178,10 @@
                 </div>
 
                 <!-- Curio Website Project Card -->
-                <div class="project-card-div" id="project-curio-card-id">
-                    <div class="project-card-screen"></div>
+                <div class="project-card-div">
+                    <div class="project-card-screen" id="project-curio-card-id"></div>
                     <div class="project-card-info">
-                        <h2 class="project-title">Curio Coffee Website</h2>
+                        <h3 class="project-title">Curio Coffee Website</h3>
                         <p>Built website for one of Boston area's finest specialty coffee shops</p>
                         <span class="github-repo-link">Github Link</span>
                         <span class="hosted-project-link">Project Link</span>
@@ -138,7 +191,7 @@
                 <div class="project-card-div">
                     <div class="project-card-screen"></div>
                     <div class="project-card-info">
-                        <h2 class="project-title">Project</h2>
+                        <h3 class="project-title">Project</h3>
                         <p>Explanation</p>
                         <span class="github-repo-link">Github Link</span>
                         <span class="hosted-project-link">Project Link</span>
@@ -148,7 +201,7 @@
                 <div class="project-card-div">
                     <div class="project-card-screen"></div>
                     <div class="project-card-info">
-                        <h2 class="project-title">Project</h2>
+                        <h3 class="project-title">Project</h3>
                         <p>Explanation</p>
                         <span class="github-repo-link">Github Link</span>
                         <span class="hosted-project-link">Project Link</span>

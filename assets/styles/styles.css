@@ -2,8 +2,10 @@
     font-size: 16px;
     /* font-family: 'Roboto', sans-serif; */
     /* font-family: 'Source Code Pro', monospace; */
-    font-family: 'Baloo 2', cursive;
+    /* font-family: 'Baloo 2', cursive; */
     /* font-family: 'Hind Madurai', sans-serif; */
+    font-family: 'Raleway', sans-serif;
+
     margin: 0;
     padding: 0;
     --text-primary: ;
@@ -22,18 +24,34 @@
 /* Font Sizing Begins ################################################ */
 h1 {
     font-size: 5rem;
+    letter-spacing: 0.3ch;
 }
 
 h2 {
     font-size: 3rem;
+    /* letter-spacing: 0.3ch; */
 }
 
 h3 {
     font-size: 2rem;
+    /* letter-spacing: 0.1ch; */
+    margin: 1rem 0 1rem 0;
+}
+
+h4 {
+    font-size: 1.5rem;
+    margin: 1rem 0 1rem 0;
+    /* letter-spacing: 0.3ch; */
+}
+
+h5 {
+    font-size: 1.2rem;
+    margin: 1rem 0 1rem 0;
 }
 
 p {
     font-size: 1rem;
+    margin: 1rem 0 1rem 0;
 }
 /* Font Sizes End ################################################ */
 
@@ -50,9 +68,10 @@ p {
     align-items: center;
     justify-content: flex-start;
     /* Navbar Animations */
-    color: grey;
+    color: black;
     transition: width 200ms ease;
-    border-right: 1px solid var(--bg-primary);
+    z-index: 2;
+    /* border-right: 1px solid var(--bg-primary); */
 }
 
 .navbar:hover {
@@ -81,7 +100,7 @@ p {
     align-items: center;
     text-decoration: none;
     
-    color: var(--bg-primary);
+    color: black;
     transition: 400ms ease;
 }
 
@@ -325,3 +344,84 @@ p {
   }
 
  /* Projects Section Ends ################################################ */
+
+
+ /* Home Page Section Begins ############################################# */
+ .home-page {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    /* margin-left: 5rem; */
+ }
+
+ .landing-page-image {
+     width: 100vw;
+ }
+
+ .home-landing-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+ }
+
+ .home-landing-title-box {
+     display: flex;
+     flex-direction: column;
+     position: absolute;
+     background-color: transparent;
+     color: white;
+     margin-top: 14rem;
+     margin-left: 3.5rem;
+     padding: 1rem;
+     text-align: center;
+     border: 1px solid var(--bg-primary)
+ }
+
+ .home-landing-title-box h3 {
+     letter-spacing: 0.3ch;
+ }
+
+ .home-landing-title-box h4 {
+    letter-spacing: 0.3ch;
+}
+
+/* Home Middle Section ################################### */
+ .home-middle-section {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     height: 50rem;
+     align-items: center;
+ }
+
+ .home-middle-section-text-box {
+     display: flex;
+     flex-direction: column;
+     /* margin-left: 10rem; */
+     padding: 2rem;
+     width: 60rem;
+     border: 1px solid var(--bg-primary)
+ }
+
+/* Home Lower Section */
+ .home-lower-section {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     height: auto;
+ }
+
+ .home-lower-section-text-box {
+    display: flex;
+    flex-direction: column;
+    /* margin-left: 10rem; */
+    padding: 2rem;
+    margin: 2rem 0 2rem 0;
+    width: 60rem;
+    border: 1px solid var(--bg-primary)
+}
+
+ 

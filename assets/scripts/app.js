@@ -71,18 +71,44 @@ const closeModals = (event) => {
   modalStatus.closedOrOpen = "closed";
 }
 ///////////////////////////////////////////////////////////////
-  
 
+
+
+//////////////////////////
+// SHOW AND HIDE PAGES //
+////////////////////////
+
+// Set initial shows/hides
+const onSiteLoad = () => {
+  $('.projects-page').hide()
+}
+
+const showProjectPage = () => {
+  $('.home-page').hide()
+  $('.projects-page').show()
+}
+
+const showHomePage = () => {
+  $('.projects-page').hide()
+  $('.home-page').show()
+}
+
+
+  
 /////////////////////
 // CLICK HANDLERS //
 ///////////////////
 const addHandlers = () => {
   $('.project-card-div').on('click', openProjectModal);
   $('.close-modal-btn').on('click', closeModals);
+  $('#projects-nav-link').on('click', showProjectPage);
+  $('#home-nav-link').on('click', showHomePage);
+
   // $('.project-modal-div').on('click', clickOutsideModal)
 }
 
 // ON PAGE LOAD //
 $(() => {
-  addHandlers()
+  addHandlers();
+  onSiteLoad();
 })
