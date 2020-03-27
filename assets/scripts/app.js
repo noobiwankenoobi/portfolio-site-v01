@@ -84,7 +84,7 @@ const closeModals = (event) => {
 const onSiteLoad = () => {
   console.log("ON SITE LOAD IS RUNNING")
   $('.projects-page').hide();
-  // $('.all-project-modals').show();
+  
   $('.bio-page').hide();
   $('.art-page').hide();
   $('.contact-page').hide();
@@ -95,7 +95,7 @@ const onSiteLoad = () => {
 const showHomePage = () => {
   $('.bio-page').hide();
   $('.projects-page').hide();
-  // $('.all-project-modals').hide();
+ 
   $('.art-page').hide();
   $('.contact-page').hide();
   $('.home-page').show();
@@ -104,7 +104,7 @@ const showHomePage = () => {
 
 const showBioPage = () => {
   $('.projects-page').hide();
-  // $('.all-project-modals').hide();
+ 
   $('.art-page').hide();
   $('.contact-page').hide();
   $('.home-page').hide();
@@ -117,7 +117,7 @@ const showProjectPage = () => {
   $('.bio-page').hide();
   $('.art-page').hide();
   $('.contact-page').hide();
-  // $('.all-project-modals').show();
+  
   $('.projects-page').show();
   closeModals();
 }
@@ -127,7 +127,7 @@ const showArtPage = () => {
   $('.bio-page').hide();
   $('.contact-page').hide();
   $('.projects-page').hide();
-  // $('.all-project-modals').hide();
+
   $('.art-page').show();
   closeModals();
 }
@@ -137,7 +137,7 @@ const showContactPage = () => {
   $('.bio-page').hide();
   $('.art-page').hide();
   $('.projects-page').hide();
-  // $('.all-project-modals').hide();
+
   $('.contact-page').show();
   closeModals();
 }
@@ -145,8 +145,6 @@ const showContactPage = () => {
 const showResumePage = () => {
   console.log("download resume")
 }
-
-
 
   
 /////////////////////
@@ -162,6 +160,7 @@ const addHandlers = () => {
   $('#resume-nav-link').on('click', showResumePage);
   // Modals handlers
   $('.project-card-div').on('click', openProjectModal);
+  
   $('.close-modal-btn').on('click', closeModals);
  
   

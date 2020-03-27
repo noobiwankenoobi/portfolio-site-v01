@@ -239,7 +239,10 @@ p {
      height: 10rem;
  }
 
- /* Projects Modals Begin ################################################ */
+ /* ########################### */
+ /* ## Projects Modals Begin ## */
+ /* ########################### */
+
  .project-modal-div {
     display: none; /* Hidden by default */
     justify-content: center;
@@ -251,7 +254,9 @@ p {
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(56, 54, 54,0.5);
     top: 0;
+    margin-left: -2.5rem;
   }
+
   
   /* Modal Content */
   .project-modal-content {
@@ -264,6 +269,7 @@ p {
     border: 2px solid var(--bg-primary);
     border-radius: 0.5rem;
     overflow: scroll;
+    z-index: 10;
   }
   
   /* The Close Button */
@@ -345,7 +351,9 @@ p {
 
   }
 
- /* Projects Section Ends ################################################ */
+/* ########################### */
+/* ## Projects Section Ends ## */
+/* ########################### */
 
 /* ############################## */
 /* ## Home Page Section Begins ## */
