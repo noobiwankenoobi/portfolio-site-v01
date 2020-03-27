@@ -44,8 +44,8 @@
                 <span class="link-text">Home</span>
             </a>
         </div>
-        <div class="nav-item">
-            <a href="" class="nav-link">
+        <div class="nav-item" id="bio-nav-link">
+            <a href="#bio" class="nav-link">
                 <i class="fa fa-info nav-icon"></i>
                 <span class="link-text">Bio</span>
             </a>
@@ -56,20 +56,20 @@
                 <span class="link-text">Projects</span>
             </a>
         </div>
-        <div class="nav-item">
-            <a href="" class="nav-link">
+        <div class="nav-item" id="art-nav-link">
+            <a href="#art" class="nav-link">
                 <i class="material-icons nav-icon">palette</i>
                 <span class="link-text">Artwork</span>
             </a>
         </div>
-        <div class="nav-item">
-            <a href="" class="nav-link">
+        <div class="nav-item" id="contact-nav-link">
+            <a href="#contact" class="nav-link">
                 <i class="fa fa-address-card nav-icon"></i>
                 <span class="link-text">Contact</span>
             </a>
         </div>
-        <div class="nav-item">
-            <a href="" class="nav-link">
+        <div class="nav-item" id="resume-nav-link">
+            <a href="#resume" class="nav-link">
                 <i class="fa fa-file-o nav-icon"></i>
                 <span class="link-text">Resumé</span>
             </a>
@@ -94,7 +94,7 @@
 
             <div class="home-middle-section">
                 <div class="home-middle-section-text-box">
-                    <h3>This is my personal hub and portfolio.</h3>
+                    <h2>This is my personal hub and portfolio.</h2>
                     <h3>This is the minimum viable version 01 of the site.<br>It took me two days to make.</h3>
                     <h3>Feel free to browse my projects and read a little about me.</h3>
                     <h3>Below are my plans for the future of the site...</h3>
@@ -134,9 +134,12 @@
 
 
         </div>
-
-
         <!-- Home Page Ends -->
+
+        <!-- Bio Page Begins -->
+        <div class="bio-page"><h1>Bio</h1>
+        </div>
+        <!-- Bio Page Ends -->
 
         <!-- Projects Page Begins -->
         <div class="projects-page">
@@ -159,7 +162,7 @@
                     <div class="project-card-info">
                         <h3 class="project-title">Real Time Face Detection</h3>
                         <p>Built Real-time face detection in browser using Face API</p>
-                        <span class="github-repo-link">Github Link</span>
+                        <span class="github-repo-link">Github Repo Link</span>
                         <span class="hosted-project-link">Project Link</span>
                     </div>
 
@@ -172,7 +175,7 @@
                     <div class="project-card-info">
                         <h3 class="project-title">Tic Tac Toe in JS</h3>
                         <p>Built playable Tic Tac Toe in Browser using Javascript</p>
-                        <span class="github-repo-link">Github Link</span>
+                        <span class="github-repo-link">Github Repo Link</span>
                         <span class="hosted-project-link">Project Link</span>
                     </div>
                 </div>
@@ -183,7 +186,7 @@
                     <div class="project-card-info">
                         <h3 class="project-title">Curio Coffee Website</h3>
                         <p>Built website for one of Boston area's finest specialty coffee shops</p>
-                        <span class="github-repo-link">Github Link</span>
+                        <span class="github-repo-link">Github Repo Link</span>
                         <span class="hosted-project-link">Project Link</span>
                     </div>
                 </div>
@@ -193,7 +196,7 @@
                     <div class="project-card-info">
                         <h3 class="project-title">Project</h3>
                         <p>Explanation</p>
-                        <span class="github-repo-link">Github Link</span>
+                        <span class="github-repo-link">Github Repo Link</span>
                         <span class="hosted-project-link">Project Link</span>
                     </div>
                 </div>
@@ -217,66 +220,76 @@
         <!-- Projects Page Ends -->
 
         <!-- Modal Section Begins -->
-        <div class="project-modal-div" id="project-facedetection-modal-id">
-            <div class="project-modal-content">
-                <div class="project-modal-header">
-                    Header
-                    <span class="close-modal-btn">X</span>
-                </div>
-                <div class="project-modal-top-section">
-                    <div class="project-modal-screen">Screen Cap Gif</div>
-                    <div class="project-modal-screen-side">Links</div>
-                </div>
-                <div class="project-modal-title">
-                    <h2>Real Time Face Detection</h2>
-                </div>
-                <div class="project-modal-bottom-section">
-                    <div class="project-modal-explain">Explanation</div>
-                    <div class="project-modal-tech-used">Tech Used</div>
-                </div>
-            </div>
-        </div>
-
-        <div class="project-modal-div" id="project-tictactoe-modal-id">
-            <div class="project-modal-content">
-                <div class="project-modal-header">
-                    Header
-                    <span class="close-modal-btn">X</span>
-                </div>
-                <div class="project-modal-top-section">
-                    <div class="project-modal-screen">Screen Cap Gif</div>
-                    <div class="project-modal-screen-side">Links</div>
-                </div>
-                <div class="project-modal-title">
-                    <h2>Tic Tac Toe</h2>
-                </div>
-                <div class="project-modal-bottom-section">
-                    <div class="project-modal-explain">Explanation</div>
-                    <div class="project-modal-tech-used">Tech Used</div>
+        <div class="all-project-modals">
+            <div class="project-modal-div" id="project-facedetection-modal-id">
+                <div class="project-modal-content">
+                    <div class="project-modal-header">
+                        Header
+                        <span class="close-modal-btn">X</span>
+                    </div>
+                    <div class="project-modal-top-section">
+                        <div class="project-modal-screen">Screen Cap Gif</div>
+                        <div class="project-modal-screen-side">Links</div>
+                    </div>
+                    <div class="project-modal-title">
+                        <h2>Real Time Face Detection</h2>
+                    </div>
+                    <div class="project-modal-bottom-section">
+                        <div class="project-modal-explain">Explanation</div>
+                        <div class="project-modal-tech-used">Tech Used</div>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <div class="project-modal-div" id="project-curio-modal-id">
-            <div class="project-modal-content">
-                <div class="project-modal-header">
-                    Header
-                    <span class="close-modal-btn">X</span>
+            <div class="project-modal-div" id="project-tictactoe-modal-id">
+                <div class="project-modal-content">
+                    <div class="project-modal-header">
+                        Header
+                        <span class="close-modal-btn">X</span>
+                    </div>
+                    <div class="project-modal-top-section">
+                        <div class="project-modal-screen">Screen Cap Gif</div>
+                        <div class="project-modal-screen-side">Links</div>
+                    </div>
+                    <div class="project-modal-title">
+                        <h2>Tic Tac Toe</h2>
+                    </div>
+                    <div class="project-modal-bottom-section">
+                        <div class="project-modal-explain">Explanation</div>
+                        <div class="project-modal-tech-used">Tech Used</div>
+                    </div>
                 </div>
-                <div class="project-modal-top-section">
-                    <div class="project-modal-screen">Screen Cap Gif</div>
-                    <div class="project-modal-screen-side">Links</div>
-                </div>
-                <div class="project-modal-title">
-                    <h2>Curio Coffee & Wine Website</h2>
-                </div>
-                <div class="project-modal-bottom-section">
-                    <div class="project-modal-explain">Explanation</div>
-                    <div class="project-modal-tech-used">Tech Used</div>
+            </div>
+            <div class="project-modal-div" id="project-curio-modal-id">
+                <div class="project-modal-content">
+                    <div class="project-modal-header">
+                        Header
+                        <span class="close-modal-btn">X</span>
+                    </div>
+                    <div class="project-modal-top-section">
+                        <div class="project-modal-screen">Screen Cap Gif</div>
+                        <div class="project-modal-screen-side">Links</div>
+                    </div>
+                    <div class="project-modal-title">
+                        <h2>Curio Coffee & Wine Website</h2>
+                    </div>
+                    <div class="project-modal-bottom-section">
+                        <div class="project-modal-explain">Explanation</div>
+                        <div class="project-modal-tech-used">Tech Used</div>
+                    </div>
                 </div>
             </div>
         </div>
         <!-- Modal Section Ends -->
+
+        <!-- Art Section Begins -->
+        <div class="art-page"><h1>Art</h1></div>
+
+        <!-- Art Section Ends -->
+
+        <!-- Contact Section Begins -->
+        <div class="contact-page"><h1>Contact</h1></div>
+
+        <!-- Contact Section Ends -->
         
         
     </div>

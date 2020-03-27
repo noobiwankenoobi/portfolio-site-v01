@@ -44,6 +44,7 @@ const modalStatus = {
 // For now this will be hard coded by project
 // Eventually pass ids around and have simpler openModal logic
 const openProjectModal = (event) => {
+  console.log("Open Project Modals is Running")
   clickedProjectCardId = event.target.id;
   if (clickedProjectCardId == faceDetectCardId ) {
     faceDetectModal.style.display = "flex";
@@ -80,18 +81,69 @@ const closeModals = (event) => {
 
 // Set initial shows/hides
 const onSiteLoad = () => {
-  $('.projects-page').hide()
-}
-
-const showProjectPage = () => {
-  $('.home-page').hide()
-  $('.projects-page').show()
+  console.log("ON SITE LOAD IS RUNNING")
+  $('.projects-page').hide();
+  // $('.all-project-modals').show();
+  $('.bio-page').hide();
+  $('.art-page').hide();
+  $('.contact-page').hide();
+  $('.home-page').show();
 }
 
 const showHomePage = () => {
-  $('.projects-page').hide()
-  $('.home-page').show()
+  $('.bio-page').hide();
+  $('.projects-page').hide();
+  // $('.all-project-modals').hide();
+  $('.art-page').hide();
+  $('.contact-page').hide();
+  $('.home-page').show();
+  closeModals();
 }
+
+const showBioPage = () => {
+  $('.projects-page').hide();
+  // $('.all-project-modals').hide();
+  $('.art-page').hide();
+  $('.contact-page').hide();
+  $('.home-page').hide();
+  $('.bio-page').show();
+  closeModals();
+}
+
+const showProjectPage = () => {
+  $('.home-page').hide();
+  $('.bio-page').hide();
+  $('.art-page').hide();
+  $('.contact-page').hide();
+  // $('.all-project-modals').show();
+  $('.projects-page').show();
+  closeModals();
+}
+
+const showArtPage = () => {
+  $('.home-page').hide();
+  $('.bio-page').hide();
+  $('.contact-page').hide();
+  $('.projects-page').hide();
+  // $('.all-project-modals').hide();
+  $('.art-page').show();
+  closeModals();
+}
+
+const showContactPage = () => {
+  $('.home-page').hide();
+  $('.bio-page').hide();
+  $('.art-page').hide();
+  $('.projects-page').hide();
+  // $('.all-project-modals').hide();
+  $('.contact-page').show();
+  closeModals();
+}
+
+const showResumePage = () => {
+  console.log("download resume")
+}
+
 
 
   
@@ -99,10 +151,18 @@ const showHomePage = () => {
 // CLICK HANDLERS //
 ///////////////////
 const addHandlers = () => {
+  // Nav Links
+  $('#home-nav-link').on('click', showHomePage);
+  $('#bio-nav-link').on('click', showBioPage);
+  $('#projects-nav-link').on('click', showProjectPage);
+  $('#art-nav-link').on('click', showArtPage);
+  $('#contact-nav-link').on('click', showContactPage);
+  $('#resume-nav-link').on('click', showResumePage);
+  // Modals handlers
   $('.project-card-div').on('click', openProjectModal);
   $('.close-modal-btn').on('click', closeModals);
-  $('#projects-nav-link').on('click', showProjectPage);
-  $('#home-nav-link').on('click', showHomePage);
+ 
+  
 
   // $('.project-modal-div').on('click', clickOutsideModal)
 }
