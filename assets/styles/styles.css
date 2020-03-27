@@ -245,7 +245,7 @@ p {
     justify-content: center;
     align-items: center;
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 2; /* Sit on top */
     width: 100vw; /* Full width */
     height: 100vh; /* Full height */
     overflow: auto; /* Enable scroll if needed */
@@ -366,8 +366,9 @@ p {
  .home-landing-section {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: auto;
     height: auto;
+    overflow: hidden;
  }
 
  .home-landing-title-box {

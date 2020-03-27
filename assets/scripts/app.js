@@ -55,6 +55,7 @@ const openProjectModal = (event) => {
   }
   // Change the modal object status
   modalStatus.closedOrOpen = "open";
+  console.log("Modal status=", faceDetectModal.style.display)
 }
 //////////////////////////////////////////////////////////////////
 
@@ -88,6 +89,7 @@ const onSiteLoad = () => {
   $('.art-page').hide();
   $('.contact-page').hide();
   $('.home-page').show();
+  // closeModals();
 }
 
 const showHomePage = () => {
