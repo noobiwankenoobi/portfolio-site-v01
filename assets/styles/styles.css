@@ -162,6 +162,11 @@ p {
 }
 /* Logo Ends ################################################ */
 
+#site-version {
+    margin-top: auto;
+    width: 10rem;
+    padding: 1rem;
+}
 
 /* Main Content Begins ################################################ */
  .main-content {
@@ -211,16 +216,18 @@ p {
      flex-direction: column;
      justify-content: center;
      align-items: center;
-     width: auto;
-     height: auto;
+     width: 35rem;
+     height: 28rem;
      margin: 3rem;
-     padding: 1rem;
+     padding: 2rem;
      border: 1px solid var(--bg-primary);
      border-radius: 5px;
  }
 
  .project-card-div:hover {
-     border: 2px solid var(--bg-secondary)
+     border: 3px solid var(--bg-secondary);
+     transition: ease-in 120ms;
+    
  }
 
  .project-card-screen {
@@ -254,6 +261,7 @@ p {
     background-color: rgb(56, 54, 54,0.5);
     top: 0;
     margin-left: -2.5rem;
+    transition: ease-in 100ms;
   }
 
   
@@ -261,11 +269,11 @@ p {
   .project-modal-content {
     display: flex;
     flex-direction: column;
-    background-color: #fefefe;
+    background-color: white;
     width: auto;
     height: 80vh;
     padding: 1rem;
-    border: 2px solid var(--bg-primary);
+    border: 4px solid var(--bg-primary);
     border-radius: 0.5rem;
     overflow: scroll;
     z-index: 10;
@@ -308,6 +316,7 @@ p {
       margin: 1rem;
       padding: 1rem;
       border: 2px solid var(--bg-primary);
+      background-color: white;
       /* background-color: pink; */
   }
 
@@ -315,29 +324,43 @@ p {
       display: flex;
       flex-direction: column;
       /* justify-content: center; */
-      align-items: center;
+      align-items: flex-start;
       width: 20rem;
       height: 28rem;
       margin: 1rem;
       padding: 1rem;
       border: 2px solid var(--bg-primary);
+      border-radius: 0.5rem;
+      background-color: white;
   }
 
   .project-modal-screen-side i {
     transform: rotate(0deg);
     font-size: 3rem;
-    margin: auto;
+    margin: 1rem;
     color: #000;
 
   }
-  
-  .project-modal-screen-side:hover i {
-    transform: rotate(360deg);
-    transition: transform var(--transition-speed);
+
+  .modal-links {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      width: 100%;
+      border-radius: 1rem;
   }
+
+  .modal-links:hover {
+    background-color: var(--bg-primary);
+    cursor: pointer;
+    transition: ease-in 200ms;  
+  }
+
+    .modal-links:hover i {
+        transform: rotate(360deg);
+        transition: transform var(--transition-speed);
+    }
     
-
-
   .project-modal-bottom-section {
       display: flex;
       width: 100%;
@@ -348,8 +371,10 @@ p {
       margin: 1rem;
       padding: 1rem;
       border: 2px solid var(--bg-primary);
+      border-radius: 0.5rem;
       height: auto;
       width: auto;
+      background-color: white;
   }
 
   .project-modal-explain {
@@ -358,6 +383,8 @@ p {
       margin: 1rem;
       padding: 1rem;
       border: 2px solid var(--bg-primary);
+      border-radius: 0.5rem;
+      background-color: white;
     
   }
 
@@ -365,9 +392,19 @@ p {
       width: 20rem;
       height: auto;
       border: 2px solid var(--bg-primary);
+      border-radius: 0.5rem;
       margin: 1rem;
       padding: 1rem;
+      background-color: white;
 
+  }
+
+  .project-description {
+      padding: 1rem;
+  }
+
+  .project-whats-coming {
+      padding: 1rem;
   }
 
 /* ########################### */
@@ -394,7 +431,7 @@ p {
     display: flex;
     flex-direction: column;
     width: auto;
-    height: auto;
+    height: 100vh;
     overflow: hidden;
  }
 
@@ -418,6 +455,29 @@ p {
 
  .home-landing-title-box h4 {
     letter-spacing: 0.3ch;
+}
+
+.home-landing-button {
+    display: flex;
+    position: absolute;
+    background-color: transparent;
+    color: white;
+    margin-top: 28rem;
+    margin-left: 7rem;
+    padding: 1rem;
+    border: 1px solid var(--bg-primary);
+    border-radius: 5px;
+}
+
+.home-landing-button:hover {
+    background-color: var(--bg-primary);
+    color: white;
+    cursor: pointer;
+}
+
+.home-landing-button h4 {
+    letter-spacing: 0.3ch;
+    margin: 0;
 }
 
 /* Home Middle Section ################################### */

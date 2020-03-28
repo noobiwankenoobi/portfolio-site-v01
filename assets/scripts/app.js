@@ -158,6 +158,8 @@ const addHandlers = () => {
   $('#art-nav-link').on('click', showArtPage);
   $('#contact-nav-link').on('click', showContactPage);
   $('#resume-nav-link').on('click', showResumePage);
+  // Home Page Button
+  $('.home-landing-button').on('click', showProjectPage);
   // Modals handlers
   $('.project-card-div').on('click', openProjectModal);
   // Closing modals using button
