@@ -160,8 +160,14 @@ const addHandlers = () => {
   $('#resume-nav-link').on('click', showResumePage);
   // Modals handlers
   $('.project-card-div').on('click', openProjectModal);
-  
+  // Closing modals using button
   $('.close-modal-btn').on('click', closeModals);
+  // Close modals by clicking outside 
+  // $('.project-modal-div').on('click', closeModals);
+  // $('#project-facedetection-modal-id').on('click', closeModals);
+  // $('#project-curio-modal-id').on('click', closeModals);
+  // $('#project-tictactoe-modal-id').on('click', closeModals);
+  
  
   
 

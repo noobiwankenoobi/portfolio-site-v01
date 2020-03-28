@@ -99,8 +99,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-decoration: none;
-    
+    text-decoration: none;  
     color: black;
     transition: 400ms ease;
 }
@@ -289,11 +288,12 @@ p {
 
   .project-modal-header {
       display: flex;
+      align-items: center;
       width: auto;
-      height: 2rem;
+      height: 1rem;
       padding: 1rem;
       margin: 0 1rem 0 1rem;
-      background-color: pink;
+      /* background-color: pink; */
   }
 
   .project-modal-top-section {
@@ -303,21 +303,40 @@ p {
   }
 
   .project-modal-screen {
-      height: 28rem;
+      height: 30rem;
       width: 60rem;
       margin: 1rem;
       padding: 1rem;
-      background-color: pink;
+      border: 2px solid var(--bg-primary);
+      /* background-color: pink; */
   }
 
   .project-modal-screen-side {
+      display: flex;
+      flex-direction: column;
+      /* justify-content: center; */
+      align-items: center;
       width: 20rem;
       height: 28rem;
       margin: 1rem;
       padding: 1rem;
-      background-color: pink;
+      border: 2px solid var(--bg-primary);
+  }
+
+  .project-modal-screen-side i {
+    transform: rotate(0deg);
+    font-size: 3rem;
+    margin: auto;
+    color: #000;
 
   }
+  
+  .project-modal-screen-side:hover i {
+    transform: rotate(360deg);
+    transition: transform var(--transition-speed);
+  }
+    
+
 
   .project-modal-bottom-section {
       display: flex;
@@ -328,24 +347,24 @@ p {
   .project-modal-title {
       margin: 1rem;
       padding: 1rem;
-      background-color: pink;
+      border: 2px solid var(--bg-primary);
       height: auto;
-      width: 100%;
+      width: auto;
   }
 
   .project-modal-explain {
       width: 60rem;
-      height: 55rem;
+      height: auto;
       margin: 1rem;
       padding: 1rem;
-      background-color: pink;
+      border: 2px solid var(--bg-primary);
     
   }
 
   .project-modal-tech-used {
       width: 20rem;
-      height: 55rem;
-      background-color: pink;
+      height: auto;
+      border: 2px solid var(--bg-primary);
       margin: 1rem;
       padding: 1rem;
 
@@ -449,19 +468,35 @@ p {
 /* ##################### */
  
 .bio-page {
-    width: 50rem;
-    height: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
     background-color: #fefefe;
 }
 
+/* ##################### */
+/* ## Art Page Begins ## */
+/* ##################### */
 .art-page {
-    width: 50rem;
-    height: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
     background-color: #fefefe;
 }
 
+/* ########################## */
+/* ## Contacts Page Begins ## */
+/* ########################## */
 .contact-page {
-    width: 50rem;
-    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
     background-color: #fefefe;
 }
