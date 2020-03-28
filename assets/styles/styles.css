@@ -434,7 +434,7 @@ p {
      flex-direction: column;
      /* margin-left: 10rem; */
      padding: 2rem;
-     width: 60rem;
+     width: auto;
      border: 1px solid var(--bg-primary);
      border-radius: 5px;
  }
@@ -454,7 +454,7 @@ p {
     /* margin-left: 10rem; */
     padding: 2rem;
     margin: 2rem 0 2rem 0;
-    width: 60rem;
+    width: 80rem;
     border: 1px solid var(--bg-primary);
     border-radius: 5px;
 }
@@ -494,9 +494,21 @@ p {
 .contact-page {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
     width: 100vw;
     height: 100vh;
     background-color: #fefefe;
+}
+
+.contact-link {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    margin: 2rem;
+}
+
+.contact-link i {
+    font-size: 5rem;
+    padding: 1rem;
 }
