@@ -43,22 +43,41 @@ const modalStatus = {
 // BY ID OF CARD CLICKED
 // For now this will be hard coded by project
 // Eventually pass ids around and have simpler openModal logic
-const openProjectModal = (event) => {
-  console.log("Open Project Modals is Running")
-  clickedProjectCardId = event.target.id;
-  if (clickedProjectCardId == faceDetectCardId ) {
-    faceDetectModal.style.display = "flex";
-  } else if (clickedProjectCardId == ticTacToeCardId) {
-    ticTacToeModal.style.display = "flex";
-  } else if (clickedProjectCardId == curioCardId) {
-    curioModal.style.display = "flex";
-  }
-  // Change the modal object status
-  modalStatus.closedOrOpen = "open";
-  console.log("Modal status=", faceDetectModal.style.display)
-}
+
+// const openProjectModal = (event) => {
+//   console.log("Open Project Modals is Running")
+//   clickedProjectCardId = event.target.id;
+//   if (clickedProjectCardId == faceDetectCardId ) {
+//     faceDetectModal.style.display = "flex";
+//   } else if (clickedProjectCardId == ticTacToeCardId) {
+//     ticTacToeModal.style.display = "flex";
+//   } else if (clickedProjectCardId == curioCardId) {
+//     curioModal.style.display = "flex";
+//   }
+//   // Change the modal object status
+//   modalStatus.closedOrOpen = "open";
+//   console.log("Modal status=", faceDetectModal.style.display)
+// }
+
 //////////////////////////////////////////////////////////////////
 
+////////////////////////////
+// OPEN INDIVIDUAL MODALS //
+////////////////////////////
+const openFacedetectModal = () => {
+  faceDetectModal.style.display = "flex";
+  modalStatus.closedOrOpen = "open";
+}
+
+const openTictactoeModal = () => {
+  ticTacToeModal.style.display = "flex";
+  modalStatus.closedOrOpen = "open";
+}
+
+const openCurioModal = () => {
+  curioModal.style.display = "flex";
+  modalStatus.closedOrOpen = "open";
+}
 
 ///////////////////
 // CLOSE MODALS //
@@ -161,7 +180,9 @@ const addHandlers = () => {
   // Home Page Button
   $('.home-landing-button').on('click', showProjectPage);
   // Modals handlers
-  $('.project-card-div').on('click', openProjectModal);
+  $('#project-facedetection-card-div').on('click', openFacedetectModal);
+  $('#project-tictactoe-card-div').on('click', openTictactoeModal);
+  $('#project-curio-card-div').on('click', openCurioModal);
   // Closing modals using button
   $('.close-modal-btn').on('click', closeModals);
   // Close modals by clicking outside 

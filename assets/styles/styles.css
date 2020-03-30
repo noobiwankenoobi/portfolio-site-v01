@@ -216,8 +216,8 @@ p {
      flex-direction: column;
      justify-content: center;
      align-items: center;
-     width: 35rem;
-     height: 28rem;
+     width: auto;
+     height: auto;
      margin: 3rem;
      padding: 2rem;
      border: 1px solid var(--bg-primary);
@@ -232,9 +232,14 @@ p {
 
  .project-card-screen {
      width: 35rem;
-     height: 20rem;
+     height: auto;
      border: 1px solid var(--bg-primary);
      cursor: pointer;
+ }
+
+ .project-card-screen img {
+     width: 35rem;
+     height: auto;
  }
 
  .project-card-info {
@@ -272,12 +277,23 @@ p {
     flex-direction: column;
     background-color: white;
     width: auto;
-    height: 80vh;
+    height: 90vh;
     padding: 1rem;
     border: 4px solid var(--bg-primary);
     border-radius: 0.5rem;
     overflow: scroll;
     z-index: 10;
+  }
+
+  .project-modal-screen {
+      display: flex;
+      justify-content: center;
+      height: auto;
+      width: auto;
+  }
+
+  .project-modal-screen img {
+    height: 35rem;
   }
   
   /* The Close Button */
@@ -312,7 +328,7 @@ p {
   }
 
   .project-modal-screen {
-      height: 30rem;
+      height: auto;
       width: 60rem;
       margin: 1rem;
       padding: 1rem;
