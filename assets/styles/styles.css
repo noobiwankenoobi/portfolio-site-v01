@@ -233,7 +233,8 @@ p {
  .project-card-screen {
      width: 35rem;
      height: 20rem;
-     border: 1px solid var(--bg-primary)
+     border: 1px solid var(--bg-primary);
+     cursor: pointer;
  }
 
  .project-card-info {
